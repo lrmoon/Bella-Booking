@@ -370,7 +370,7 @@
             </div>
         </section>
         <!-- Testimonials -->
-        <section id="testimonials" class="testimonials testimonials-padding bg-img" data-overlay-dark="5" data-background="{% static 'img/banner.jpg'%}">
+        <section id="testimonials" class="testimonials testimonials-padding bg-img" data-overlay-dark="5" data-background="./img/banner.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
@@ -570,7 +570,13 @@
                 </div>
             </div>
         </section>
-       
+
+        <script>
+            $(document).ready(function(){
+              $(".owl-carousel").owlCarousel();
+            })
+          </script>
+
 </body>
 </html>
 

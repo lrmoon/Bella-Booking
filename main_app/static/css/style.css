@@ -1569,6 +1569,9 @@ body.offcanvason .ovon-nav-toggle {
     font-size: 20px;
     color: #DD6E8B;
 }
+#testimonials{
+background-image: url(../img/banner.jpg);
+}
 
 
 /* =======  Portfolio (Gallery) style  ======= */
