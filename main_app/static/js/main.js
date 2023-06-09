@@ -369,13 +369,19 @@
     });
     
     //  Scroll back to top
-    var progressPath = document.querySelector('.progress-wrap path');
-    var pathLength = progressPath.getTotalLength();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-    progressPath.style.strokeDashoffset = pathLength;
-    progressPath.getBoundingClientRect();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+    document.addEventListener('DOMContentLoaded', function() {
+        var progressPath = document.querySelector('.progress-wrap path');
+        if (progressPath) {
+          var pathLength = progressPath.getTotalLength();
+          progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+          progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+          progressPath.style.strokeDashoffset = pathLength;
+          progressPath.getBoundingClientRect();
+          progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+        }
+    });
+   
+   
     var updateProgress = function () {
         var scroll = $(window).scrollTop();
         var height = $(document).height() - $(window).height();
