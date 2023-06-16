@@ -1,19 +1,10 @@
+{% extends 'base.html'%}
+{% load static %}
+
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>O V O N</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/style.css">
+   
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->
@@ -29,53 +20,13 @@
         </svg>
     </div>
     <!-- Sidebar Section -->
-    <a href="#" class="js-ovon-nav-toggle ovon-nav-toggle"><i></i></a>
-    <aside id="ovon-aside">
-        <!-- Logo -->
-        <div class="ovon-logo">
-            <a href="index.html"> <img src="img/logo-dark.png" alt=""> </a>
-        </div>
-        <!-- Menu -->
-        <nav class="ovon-main-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="ovon-sub"><a href="#">Pages <i class="ti-angle-down"></i></a>
-                    <ul>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="eye-makeup.html">Services Page</a></li>
-                        <li><a href="post.html">Post Page</a></li>
-                        <li class="ovon-sub"><a href="#">Other Pages <i class="ti-angle-down"></i></a>
-                            <ul>
-                                <li><a href="404.html">404 Page</a></li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Sidebar Footer -->
-        <div class="ovon-footer">
-            <div class="separator"></div>
-            <ul>
-                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                <li><a href="#"><i class="ti-twitter"></i></a></li>
-                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                <li><a href="#"><i class="ti-pinterest"></i></a></li>
-            </ul>
-            <p>&copy; 2023 OVON by DuruThemes.</p>   
-        </div>
-    </aside>
+    
+       
     <!-- Main Section -->
+    {% block content %}
     <div id="ovon-main">
         <!-- Banner -->
-        <section class="ready banner-padding bg-img" data-overlay-dark="4" data-background="img/banner.jpg">
+        <section class="ready banner-padding bg-img" id="ready-banner" data-overlay-dark="4" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -95,8 +46,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="about-img mb-30 img-fluid animate-box" data-animate-effect="fadeInUp" style="background-image: url(img/about.jpg);">
-                            <div class="about-img-2 signature" style="background-image: url(img/signature.png);"></div>
+                        <div class="about-img mb-30 img-fluid animate-box" id="about-animate" data-animate-effect="fadeInUp">
+                            <div class="about-img-2 signature" id="about-image-22"></div>
                         </div>
                     </div>
                     <div class="col-md-7 animate-box" data-animate-effect="fadeInUp">
@@ -114,19 +65,19 @@
                             </div>
                             <div class="col-md-12 owl-carousel owl-theme">
                                 <div class="awards-logo">
-                                    <a href="#"><img src="img/awards/1.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'img/awards/1.jpg' %}" alt=""></a>
                                 </div>
                                 <div class="awards-logo">
-                                    <a href="#"><img src="../img/awards/2.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'img/awards/2.jpg' %}" alt=""></a>
                                 </div>
                                 <div class="awards-logo">
-                                    <a href="#"><img src="../img/awards/3.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'img/awards/3.jpg' %}" alt=""></a>
                                 </div>
                                 <div class="awards-logo">
-                                    <a href="#"><img src="../img/awards/4.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'img/awards/4.jpg' %}" alt=""></a>
                                 </div>
                                 <div class="awards-logo">
-                                    <a href="#"><img src="../img/awards/5.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'img/awards/5.jpg' %}" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +90,7 @@
             <div class="container">
                     <div class="row">
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                            <img src="img/banner2.jpg" class="img-fluid" alt="">
+                            <img src="{% static 'img/banner2.jpg' %}" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                                 <div class="cont">
@@ -188,7 +139,7 @@
                 <div class="row">
                     <div class="col-md-12 owl-carousel">
                         <div class="team-card mb-30">
-                            <div class="team-img"><img src="img/team/3.jpg" alt="" class="w-100"></div>
+                            <div class="team-img"><img src="{% static 'img/team/3.jpg' %}" alt="" class="w-100"></div>
                             <div class="team-content">
                                 <h3 class="team-title">Anna Brown</h3>
                                 <p class="team-text">Hello, I’am Anna. I love people love to fell beautiful, which is the reason I’ve spent last 10 years engulfed in doing Make up.</p>
@@ -198,7 +149,7 @@
                             </div>
                         </div>
                         <div class="team-card mb-30">
-                            <div class="team-img"><img src="img/team/2.jpg" alt="" class="w-100"></div>
+                            <div class="team-img"><img src="{% static 'img/team/2.jpg' %}" alt="" class="w-100"></div>
                             <div class="team-content">
                                 <h3 class="team-title">Robert White</h3>
                                 <p class="team-text">Hello, I’am Robert. I love people love to fell beautiful, which is the reason I’ve spent last 7 years engulfed in doing Make up.</p>
@@ -208,7 +159,7 @@
                             </div>
                         </div>
                         <div class="team-card mb-30">
-                            <div class="team-img"><img src="img/team/1.jpg" alt="" class="w-100"></div>
+                            <div class="team-img"><img src="{% static 'img/team/1.jpg' %}" alt="" class="w-100"></div>
                             <div class="team-content">
                                 <h3 class="team-title">Yvonne Scott</h3>
                                 <p class="team-text">Hello, I’am Yvonne. I love people love to fell beautiful, which is the reason I’ve spent last 5 years engulfed in doing Make up.</p>
@@ -222,87 +173,55 @@
             </div>
         </section>
         <hr class="line-vr-section">
+
+        <!-- scripts -->
+        <script>
+        $('.awards .owl-carousel').owlCarousel({
+            loop: true
+            , margin: 15
+            , mouseDrag: true
+            , autoplay: true
+            , dots: false
+            , responsiveClass: true
+            , responsive: {
+                0: {
+                    margin: 10
+                    , items: 2
+                }
+                , 600: {
+                    items: 3
+                }
+                , 1000: {
+                    items: 4
+                }
+            }
+        });
+        
+        
+        // Team owlCarousel
+        $('.team .owl-carousel').owlCarousel({
+            loop: true
+            , margin: 30
+            , dots: true
+            , mouseDrag: true
+            , autoplay: false
+            , responsiveClass: true
+            , responsive: {
+                0: {
+                    items: 1
+                }
+                , 600: {
+                    items: 2
+                }
+                , 1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+        {% endblock %}
         <!-- Footer -->
-        <footer class="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-30">
-                    <a href="index.html"> <img src="img/logo-dark.png" alt=""> </a>
-                    <p>Hi, I'm Olivia a Professional Makeup Artist. Quisque luctus tincidunt enim daibus miss neuenete ultrie ectus.</p>
-                    <div class="social-icon"> <a href="index.html"><i class="ti-facebook"></i></a> <a href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i class="ti-instagram"></i></a> <a href="index.html"><i class="ti-pinterest"></i></a> </div>
-                </div>
-                <div class="col-md-4 mb-30">
-                    <h6>Get in touch</h6>
-                    <ul class="list-unstyled footer-list">
-                        <li>
-                            <div class="icon"><i class="ti-headphone-alt"></i></div>
-                            <div class="text">
-                                <p><a href="tel:+1-650-444-0000">+1 650-444-0000</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"> <i class="ti-email"></i> </div>
-                            <div class="text">
-                                <p><a href="mailto:makeup@ovon.com">makeup@ovon.com</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"> <i class="ti-location-pin"></i> </div>
-                            <div class="text">
-                                <p>525 West Ave, CT 06850 Norwalk</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-30">
-                    <h6>Opening Hours</h6>
-                    <div class="footer-table">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Mon - Fri :</td>
-                                    <td>10am - 7pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday :</td>
-                                    <td>10am - 5pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Sunday :</td>
-                                    <td><a href="tel:+1-650-444-0000">By Call</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sub-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-left">
-                            <p>© Copyright 2023. All right reserved.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <p class="right"><a href="#">Terms &amp; Conditions</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    </div>
-    <!-- jQuery -->
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/scrollIt.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/main.js"></script>
+        
+    
 </body>
 </html>

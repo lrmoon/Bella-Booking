@@ -1630,7 +1630,17 @@ background-image: url(../img/banner.jpg);
 .gallery-box:hover .gallery-img > img {
     transform: scale(1.05);
 }
+/* about page custom */
 
+#ready-banner{
+    background-image: url(../img/banner.jpg);
+}
+#about-animate{
+    background-image: url(../img/about.jpg);
+}
+#about-image-2{
+    background-image: url(../img/signature.png);
+}
 
 /* ======= Pricing style ======= */
 .price-list .price-box-inner {
