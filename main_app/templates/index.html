@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
     
     <!-- Main Section -->
     <div id="ovon-main">
@@ -574,6 +574,13 @@
         </section>
 
           <script>
+            
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    $("#loader").fadeOut(200);
+                }, 200);
+            });
+
             $('.blog .owl-carousel').owlCarousel({
                 loop: true
                 , margin: 30
@@ -1014,7 +1021,7 @@
             })(jQuery);
           </script>
 
-</body>
+
 </html>
 
 {% endblock %}

@@ -30,6 +30,27 @@ def pricing(request):
 def eyeMakeup(request):
     return render(request, 'main_app/pages/service-type/eye-makeup.html')
 
+def hairMakeup(request):
+    return render(request, 'main_app/pages/service-type/hair-makeup.html')
+
+def faceMakeup(request):
+    return render(request, 'main_app/pages/service-type/face-makeup.html')
+
+def bridalMakeup(request):
+    return render(request, 'main_app/pages/service-type/bridal-makeup.html')
+
+def fashionMakeup(request):
+    return render(request, 'main_app/pages/service-type/fashion-makeup.html')
+
+def fantasticMakeup(request):
+    return render(request, 'main_app/pages/service-type/fantastic-makeup.html')
+
+def effectMakeup(request):
+    return render(request, 'main_app/pages/service-type/effect-makeup.html')
+
+def childFacePainting(request):
+    return render(request, 'main_app/pages/service-type/child-face-painting.html')
+
 
 
 def nope404(request):

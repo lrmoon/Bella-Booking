@@ -25,7 +25,9 @@
 
 ================================== */
 
-
+#team-banner{
+    background-image: url("../img/banner.jpg");
+}
 
 /* ======= General style ======= */
 * {
@@ -1640,6 +1642,10 @@ background-image: url(../img/banner.jpg);
 }
 #about-image-2{
     background-image: url(../img/signature.png);
+}
+
+#space{
+    padding: 300px;
 }
 
 /* ======= Pricing style ======= */
