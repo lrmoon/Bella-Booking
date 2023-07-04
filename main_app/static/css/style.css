@@ -40,6 +40,12 @@
 #pricing-banner{
     background-image: url("../img/banner.jpg")
 }
+
+/* pages-services */
+#pages-services-banner{
+    background-image: url("../img/banner.jpg")
+}
+
 /* ======= General style ======= */
 * {
     padding: 0;

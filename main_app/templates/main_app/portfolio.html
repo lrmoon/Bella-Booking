@@ -1,11 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
-<!doctype html>
-<html class="no-js" lang="en">
+
 
 {% block content %}
     <!-- Main Section -->
-    <div id="ovon-main">
+    
         <!-- Banner -->
         <section class="ready banner-padding bg-img" data-overlay-dark="4" id="ready-banner">
             <div class="container">
@@ -101,9 +100,33 @@
                 </div>
             </div>
         </section>
-        {% endblock %}
-        <hr class="line-vr-section">
-    </div>
+        
+        <script>$('.ovon-main-menu li.ovon-sub>a').on('click', function () {
+            $(this).removeAttr('href');
+            var element = $(this).parent('li');
+            if (element.hasClass('open')) {
+                element.removeClass('open');
+                element.find('li').removeClass('open');
+                element.find('ul').slideUp();
+            }
+            else {
+                element.addClass('open');
+                element.children('ul').slideDown();
+                element.siblings('li').children('ul').slideUp();
+                element.siblings('li').removeClass('open');
+                element.siblings('li').find('li').removeClass('open');
+                element.siblings('li').find('ul').slideUp();
+            }
+        });
+        $('.ovon-main-menu>ul>li.ovon-sub>a').append('<span class="holder"></span>');
+        // Document on load.
+        $(function () {
+            contentWayPoint();
+            burgerMenu();
+            mobileMenuOutsideClick();
+        });
+        var wind = $(window);
+        </script>
     
-
-</html>
+    {% endblock %}
+    

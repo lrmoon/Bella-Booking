@@ -2,14 +2,16 @@
 {% load static %}
 
 {% block content %}
+    <!-- Main Section -->
+    
         <!-- Banner -->
-        <section class="ready banner-padding bg-img" data-overlay-dark="4" data-background="img/banner.jpg">
+        <section class="ready banner-padding bg-img" data-overlay-dark="4" id="pages-services-banner">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="text-left">
                             <div class="title animate-box" data-animate-effect="fadeInUp"> <span><a href="services.html">Services</a></span>
-                                <h2>Hair Makeup</h2>
+                                <h2>Eye Makeup</h2>
                                 <hr class="line line-hr-secondary">
                             </div>
                         </div>
@@ -26,7 +28,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="img"> <img src="img/services/s7.jpg" class="img-fluid mb-30" alt=""> </div>
-                                <h3>Hair Makeup</h3>
+                                <h3>Eye Makeup</h3>
                                 <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare. Morbi mollis a enim nec ullase emcorper. Proin condimentum ut mauris ut placerat. Donec commodo diam lorem, commodo viverra metus mollis nec. Nam vehicula ipsum faucibus at eros vitae dui pulvina the ornare.</p>
                                 <p>Morbi mollis a enim nec ullamcorper. Proin condimentum ut mauris ut placerat. Donec commodo diamlorem, commodo viverra metus mollis vehicula ipsum faucibus.</p>
                             </div>
@@ -50,59 +52,84 @@
                         <!-- gallery -->
                         <div class="row mb-30">
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g1.jpg" title="Eye Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g1.jpg' %}" title="Eye Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g1.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g1.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g2.jpg" title="Painting Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g2.jpg' %}" title="Painting Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g2.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g2.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g3.jpg" title="Bridal Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g3.jpg' %}" title="Bridal Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g3.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g3.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g4.jpg" title="Effect Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g4.jpg' %}" title="Effect Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g4.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g4.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g5.jpg" title="Fashion Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g5.jpg' %}" title="Fashion Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g5.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g5.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g6.jpg" title="Fashion Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g6.jpg' %}" title="Fashion Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g6.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g6.jpg' %}" class="img-fluid mx-auto d-block" alt=""> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
-                    {% include 'includes/blog-sidebar.html' %}
+                    {% include 'includes/blog-sidebar.html' %}    
 
                 </div>
             </div>
         </section>
+        <script>$('.ovon-main-menu li.ovon-sub>a').on('click', function () {
+            $(this).removeAttr('href');
+            var element = $(this).parent('li');
+            if (element.hasClass('open')) {
+                element.removeClass('open');
+                element.find('li').removeClass('open');
+                element.find('ul').slideUp();
+            }
+            else {
+                element.addClass('open');
+                element.children('ul').slideDown();
+                element.siblings('li').children('ul').slideUp();
+                element.siblings('li').removeClass('open');
+                element.siblings('li').find('li').removeClass('open');
+                element.siblings('li').find('ul').slideUp();
+            }
+        });
+        $('.ovon-main-menu>ul>li.ovon-sub>a').append('<span class="holder"></span>');
+        // Document on load.
+        $(function () {
+            contentWayPoint();
+            burgerMenu();
+            mobileMenuOutsideClick();
+        });
+        var wind = $(window);
+        </script>
         {% endblock %}

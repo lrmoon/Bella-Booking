@@ -28,7 +28,7 @@ def pricing(request):
     return render(request, 'main_app/pages/pricing.html')
 
 def eyeMakeup(request):
-    return render(request, 'main_app/pages/service-type/eye-makeup.html')
+    return render(request, 'main_app/pages/pages-services.html')
 
 def hairMakeup(request):
     return render(request, 'main_app/pages/service-type/hair-makeup.html')

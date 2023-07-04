@@ -27,7 +27,8 @@
     <script src="{% static 'js/owl.carousel.min.js'%}"></script>
     <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
     <script src="{% static 'js/smooth-scroll.min.js'%}"></script>
-    <script src="{% static 'js/main.js'%}"></script>
+    <script src="{% static 'js/main_copy.js'%}"></script>
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -53,7 +54,7 @@
     
         {% include 'includes/navbar.html' %}
     </aside>
-    
+    <div id="ovon-main">
         {% block content %}
         <!---- content -->
         {% endblock %}
@@ -61,6 +62,7 @@
         <!-- footer -->
         
         {% include 'includes/footer.html' %}
+    </div>
 </body>
 <!----navbar-->
 
