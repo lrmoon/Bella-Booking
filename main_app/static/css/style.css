@@ -29,6 +29,17 @@
     background-image: url("../img/banner.jpg");
 }
 
+/* pricing page */
+#price-box-inner-1{
+    background-image: url("../img/pricing/a.jpg")
+}
+
+#price-box-inner-2{
+    background-image: url("../img/pricing/b.jpg")
+}
+#pricing-banner{
+    background-image: url("../img/banner.jpg")
+}
 /* ======= General style ======= */
 * {
     padding: 0;
