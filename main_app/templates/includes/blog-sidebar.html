@@ -6,14 +6,14 @@
                     <h4>Services</h4>
                 </div>
                 <ul>
-                    <li class="active"><a href="{% url 'eye-makeup' %}">Eye Makeup</a></li>
-                    <li><a href="{% url 'hair-makeup' %}">Hair Makeup</a></li>
-                    <li><a href="{% url 'fashion-makeup' %}">Fashion Makeup</a></li>
-                    <li><a href="{% url 'face-makeup' %}">Face Makeup</a></li>
-                    <li><a href="{% url 'fantastic-makeup'%}">Fantastic Makeup</a></li>
-                    <li><a href="{% url 'effect-makeup'%}">Effect Makeup</a></li>
-                    <li><a href="{% url 'child-face-painting'%}">Child Face Painting</a></li>
-                    <li><a href="{% url 'bridal-makeup'%}">Bridal Makeup</a></li>
+                    <li class="{% if '/eye-makeup/' in request.path %}active{% endif %}"><a href="{% url 'eye-makeup' %}">Eye Makeup</a></li>
+                    <li class="{% if '/hair-makeup/' in request.path %}active{% endif %}"><a href="{% url 'hair-makeup' %}">Hair Makeup</a></li>
+                    <li class="{% if '/fashion-makeup/' in request.path %}active{% endif %}"><a href="{% url 'fashion-makeup' %}">Fashion Makeup</a></li>
+                    <li class="{% if '/face-makeup/' in request.path %}active{% endif %}"><a href="{% url 'face-makeup' %}">Face Makeup</a></li>
+                    <li class="{% if '/fantastic-makeup/' in request.path %}active{% endif %}"><a href="{% url 'fantastic-makeup'%}">Fantastic Makeup</a></li>
+                    <li class="{% if '/effect-makeup/' in request.path %}active{% endif %}"><a href="{% url 'effect-makeup'%}">Effect Makeup</a></li>
+                    <li class="{% if '/child-face-painting/' in request.path %}active{% endif %}"><a href="{% url 'child-face-painting'%}">Child Face Painting</a></li>
+                    <li class="{% if '/bridal-makeup/' in request.path %}active{% endif %}"><a href="{% url 'bridal-makeup'%}">Bridal Makeup</a></li>
                 </ul>
             </div>
         </div>

@@ -1,80 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>O V O N</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Preloader -->
-    <div id="loader">
-        <div class="loading">
-            <div></div>
-        </div>
-    </div>
-    <!-- Progress scroll totop -->
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-    <!-- Sidebar Section --><a href="#" class="js-ovon-nav-toggle ovon-nav-toggle"><i></i></a>
-    <aside id="ovon-aside">
-        <!-- Logo -->
-        <div class="ovon-logo">
-            <a href="index.html"> <img src="img/logo-dark.png" alt=""> </a>
-        </div>
-        <!-- Menu -->
-        <nav class="ovon-main-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="ovon-sub active"><a href="#">Pages <i class="ti-angle-down"></i></a>
-                    <ul>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li class="active"><a href="eye-makeup.html">Services Page</a></li>
-                        <li><a href="post.html">Post Page</a></li>
-                        <li class="ovon-sub"><a href="#">Other Pages <i class="ti-angle-down"></i></a>
-                            <ul>
-                                <li><a href="404.html">404 Page</a></li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Sidebar Footer -->
-        <div class="ovon-footer">
-            <div class="separator"></div>
-            <ul>
-                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                <li><a href="#"><i class="ti-twitter"></i></a></li>
-                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                <li><a href="#"><i class="ti-pinterest"></i></a></li>
-            </ul>
-            <p>&copy; 2023 OVON by DuruThemes.</p>   
-        </div>
-    </aside>
-    <!-- Main Section -->
-    <div id="ovon-main">
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
         <!-- Banner -->
-        <section class="ready banner-padding bg-img" data-overlay-dark="4" data-background="img/banner.jpg">
+        <section class="ready banner-padding bg-img" data-overlay-dark="4" id="pages-services-banner">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -122,160 +51,60 @@
                         <!-- gallery -->
                         <div class="row mb-30">
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g1.jpg" title="Eye Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g1.jpg' %}" title="Eye Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g1.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g1.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g2.jpg" title="Painting Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g2.jpg' %}" title="Painting Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g2.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g2.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g3.jpg" title="Bridal Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g3.jpg' %}" title="Bridal Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g3.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g3.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g4.jpg" title="Effect Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g4.jpg' %}" title="Effect Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g4.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g4.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g5.jpg" title="Fashion Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g5.jpg' %}" title="Fashion Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g5.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g5.jpg' %}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-md-6 gallery-item">
-                                <a href="img/services/g6.jpg" title="Fashion Makeup" class="img-zoom">
+                                <a href="{% static 'img/services/g6.jpg' %}" title="Fashion Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="img/services/g6.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
+                                        <div class="gallery-img"> <img src="{% static 'img/services/g6.jpg' %}" class="img-fluid mx-auto d-block" alt=""> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 sidebar-side animate-box" data-animate-effect="fadeInUp">
-                            <aside class="sidebar blog-sidebar">
-                                <div class="sidebar-widget services">
-                                    <div class="widget-inner">
-                                        <div class="sidebar-title">
-                                            <h4>Services</h4>
-                                        </div>
-                                        <ul>
-                                            <li><a href="eye-makeup.html">Eye Makeup</a></li>
-                                            <li><a href="hair-makeup.html">Hair Makeup</a></li>
-                                            <li><a href="fashion-makeup.html">Fashion Makeup</a></li>
-                                            <li><a href="face-makeup.html">Face Makeup</a></li>
-                                            <li><a href="fantastic-makeup.html">Fantastic Makeup</a></li>
-                                            <li class="active"><a href="effect-makeup.html">Effect Makeup</a></li>
-                                            <li><a href="child-face-painting.html">Child Face Painting</a></li><li><a href="bridal-makeup.html">Bridal Makeup</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </aside>
-                        </div>
+                    
+                    {% include 'includes/blog-sidebar.html' %}
+
                 </div>
             </div>
         </section>
-        <hr class="line-vr-section">
-        <!-- Footer -->
-        <footer class="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-30">
-                    <a href="index.html"> <img src="img/logo-dark.png" alt=""> </a>
-                    <p>Hi, I'm Olivia a Professional Makeup Artist. Quisque luctus tincidunt enim daibus miss neuenete ultrie ectus.</p>
-                    <div class="social-icon"> <a href="index.html"><i class="ti-facebook"></i></a> <a href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i class="ti-instagram"></i></a> <a href="index.html"><i class="ti-pinterest"></i></a> </div>
-                </div>
-                <div class="col-md-4 mb-30">
-                    <h6>Get in touch</h6>
-                    <ul class="list-unstyled footer-list">
-                        <li>
-                            <div class="icon"><i class="ti-headphone-alt"></i></div>
-                            <div class="text">
-                                <p><a href="tel:+1-650-444-0000">+1 650-444-0000</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"> <i class="ti-email"></i> </div>
-                            <div class="text">
-                                <p><a href="mailto:makeup@ovon.com">makeup@ovon.com</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"> <i class="ti-location-pin"></i> </div>
-                            <div class="text">
-                                <p>525 West Ave, CT 06850 Norwalk</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-30">
-                    <h6>Opening Hours</h6>
-                    <div class="footer-table">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Mon - Fri :</td>
-                                    <td>10am - 7pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday :</td>
-                                    <td>10am - 5pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Sunday :</td>
-                                    <td><a href="tel:+1-650-444-0000">By Call</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sub-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-left">
-                            <p>© Copyright 2023. All right reserved.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <p class="right"><a href="#">Terms &amp; Conditions</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    </div>
-    <!-- jQuery -->
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/scrollIt.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+        
+        {% endblock %}

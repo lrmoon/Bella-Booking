@@ -101,7 +101,27 @@
                             </div>
                         </div>
                     </div>
-                    {% include 'includes/blog-sidebar.html' %}    
+                    
+                    <div class="col-md-4 sidebar-side animate-box" data-animate-effect="fadeInUp">
+                        <aside class="sidebar blog-sidebar">
+                            <div class="sidebar-widget services">
+                                <div class="widget-inner">
+                                    <div class="sidebar-title">
+                                        <h4>Services</h4>
+                                    </div>
+                                    <ul>
+                                        <li class="active"><a href="{% url 'eye-makeup' %}">Eye Makeup</a></li>
+                                        <li><a href="{% url 'hair-makeup' %}">Hair Makeup</a></li>
+                                        <li><a href="{% url 'fashion-makeup' %}">Fashion Makeup</a></li>
+                                        <li><a href="{% url 'face-makeup' %}">Face Makeup</a></li>
+                                        <li><a href="{% url 'fantastic-makeup' %}">Fantastic Makeup</a></li>
+                                        <li><a href="{% url 'effect-makeup' %}">Effect Makeup</a></li>
+                                        <li><a href="{% url 'child-face-painting' %}">Child Face Painting</a></li><li><a href="bridal-makeup.html">Bridal Makeup</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
 
                 </div>
             </div>
