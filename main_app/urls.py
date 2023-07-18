@@ -7,13 +7,13 @@ urlpatterns = [
     path("about/", views.about, name="about"),
     path("services/", views.services, name="services"),
     path("portfolio/", views.portfolio, name="portfolio"),
-    path("blog/", views.blog, name="blog"),
+    
     path("contact/", views.contact, name="contact"),
 
     
 
     path("pages/team/", views.team, name="team"),
-    path("pages/pricing/", views.pricing, name="pricing"),
+    
     path("pages/pages-services/eye-makeup", views.eyeMakeup, name="eye-makeup"),
     path("pages/pages-services/hair-makeup/", views.hairMakeup, name="hair-makeup"),
     path("pages/pages-services/face-makeup/", views.faceMakeup, name="face-makeup"),

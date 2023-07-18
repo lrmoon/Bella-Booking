@@ -1122,7 +1122,7 @@ body.offcanvason .ovon-nav-toggle {
     background-image: url(../img/about.jpg);
 }
 #about-image-22{
-    background-image: url(../img/signature.png);
+    background-image: url(../img/new-sig-1.png);
 }
 /* signature */
 .signature {
@@ -2759,3 +2759,61 @@ blockquote cite:before {
 #main-banner{
     background-image: url(../img/slider.jpeg);
 }
+
+#main-logo{
+    margin-bottom: 50px;
+}
+
+#booking-button{
+    padding: 12px 32px;
+    cursor: pointer;
+    background: #DD6E8B;
+    -webkit-appearance: none;
+    position: relative;
+    color: #fff;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    border-radius: 0;
+    border: none;
+}
+
+.pink-button {
+    margin-top: 25px;
+    display: inline-block;
+    background-color: #DD6E8B;
+    color: #fff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    
+}
+
+.pink-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .pink-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+.pink-button:hover span {
+    padding-right: 25px;
+}
+  
+.pink-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+

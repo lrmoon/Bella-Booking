@@ -49,9 +49,12 @@
     <aside id="ovon-aside">
         <!-- Logo -->
         <div class="ovon-logo">
-            <a href="{% url 'index' %}"> <img src="{% static 'img/logo-dark.png' %}" alt=""> </a>
+            <a href="{% url 'index' %}"> <img src="{% static 'img/new-slider.png' %}" alt="" id="main-logo"> </a>
+              <div class="ovon-footer">
+                <a href="https://example.com" class="pink-button animate-box fadeInUp animated" style="color: white;"><span style="font-size: 15px;">Book Now </span></a>
+            </div>  
         </div>
-    
+        
         {% include 'includes/navbar.html' %}
     </aside>
     <div id="ovon-main">
