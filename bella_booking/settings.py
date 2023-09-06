@@ -13,13 +13,14 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 import environ
-
+import dj_database_url
 env = environ.Env()
 
 environ.Env.read_env()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -86,6 +87,13 @@ DATABASES = {
     }
 }
 
+
+database_url = env("DATABASE_URL")
+DATABASES["default"] = dj_database_url.parse(database_url)
+
+
+
+#postgres://dbbellabeauty_user:KQQTqYx3zpwUaqHh4cqzmQ4dXz38CgS1@dpg-cjsa815m702s73887j1g-a.oregon-postgres.render.com/dbbellabeauty
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
