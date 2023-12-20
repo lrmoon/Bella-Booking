@@ -43,8 +43,20 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "sass_processor",
     "main_app"
 ]
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+    
+]
+
+import os
+
+SASS_PROCESSOR_AUTO_INCLUDE = False
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -89,8 +101,7 @@ DATABASES = {
 }
 
 
-database_url = env("DATABASE_URL")
-DATABASES["default"] = dj_database_url.parse(database_url)
+
 
 
 
