@@ -12,7 +12,7 @@
                     <div class="col-md-12">
                         <div class="text-left">
                             <div class="title animate-box" data-animate-effect="fadeInUp"> <span><a href="services.html">Services</a></span>
-                                <h2>Microblading</h2>
+                                <h2>Brow Microblading</h2>
                                 <hr class="line line-hr-secondary">
                             </div>
                         </div>
@@ -37,15 +37,13 @@
                                 <br/>
                                 <h3>Why choose Microblading?</h3>
                                 <div class="list">
-                                    <h2>List Item Hover Effect</h2>
+                                    
                                     <ul>
                                       <li><span><strong>Customized Beauty:</strong> Achieve brows tailored to your unique face shape, featuring the ideal combination of shading and microblading for a personalized look.</span></li>
-                                      <br/>
-                                      <li><span>Consectetur adipisicing elit</span></li>
-                                      <li><span>Ut labore et dolore magna aliqua</span></li>
-                                      <li><span>Ut enim ad minim veniam</span></li>
-                                      <li><span>Quis nostrud exercitation ullamco</span></li>
-                                      <li><span>Laboris nisi ut aliquip ex</span></li>
+                                      <li><span><strong>Natural Beauty:</strong> Say goodbye to the daily eyebrow routine. Microblading results in soft, realistic brows that effortlessly blend with your features.</span></li>
+                                      <li><span><strong>Long-Lasting:</strong> Enjoy the benefits of perfect brows for up to two years with minimal maintenance.</span></li>
+                                      <li><span><strong>Customized:</strong> We tailor each microblading session to your unique face shape and desired style, ensuring a personalized and flattering look.</span></li>
+                                      <li><span><strong>Painless:</strong> Our expert technique and top-quality products guarantee a comfortable and virtually pain-free experience.</span></li>
                                     </ul>
                                   </div>
                             </div>
@@ -118,8 +116,9 @@
                             </div>
                         </div>
                     </div>
+                    {% include 'includes/blog-sidebar.html' %}
                     
-                    <div class="col-md-4 sidebar-side animate-box" data-animate-effect="fadeInUp">
+                    {% comment %} <div class="col-md-4 sidebar-side animate-box" data-animate-effect="fadeInUp">
                         <aside class="sidebar blog-sidebar">
                             <div class="sidebar-widget services">
                                 <div class="widget-inner">
@@ -127,9 +126,9 @@
                                         <h4>Services</h4>
                                     </div>
                                     <ul>
-                                        <li class="active"><a href="{% url 'eye-makeup' %}">Eye Makeup</a></li>
-                                        <li><a href="{% url 'hair-makeup' %}">Hair Makeup</a></li>
-                                        <li><a href="{% url 'fashion-makeup' %}">Fashion Makeup</a></li>
+                                        <li class="active"><a href="{% url 'eye-makeup' %}">Microblading</a></li>
+                                        <li><a href="{% url 'hair-makeup' %}">Ombre Brow</a></li>
+                                        <li><a href="{% url 'fashion-makeup' %}">Combination</a></li>
                                         <li><a href="{% url 'face-makeup' %}">Face Makeup</a></li>
                                         <li><a href="{% url 'fantastic-makeup' %}">Fantastic Makeup</a></li>
                                         <li><a href="{% url 'effect-makeup' %}">Effect Makeup</a></li>
@@ -138,7 +137,7 @@
                                 </div>
                             </div>
                         </aside>
-                    </div>
+                    </div> {% endcomment %}
 
                 </div>
             </div>
