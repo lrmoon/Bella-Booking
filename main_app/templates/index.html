@@ -90,7 +90,7 @@
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme">
                             <div class="item">
-                                <div class="position-re o-hidden"> <img src="{% static 'img/WebP/img4proto.jpeg'%}" alt="" > </div>
+                                <div class="position-re o-hidden"> <img src="{% static 'img/WebP/img4.webp'%}" alt="" > </div>
                                 <div class="con">
                                     <h5><a href="{% url 'eye-makeup'%}">Microblading</a></h5>
                                 </div>
@@ -703,7 +703,9 @@
                     , margin: 30
                     , mouseDrag: true
                     , autoplay: false
-                    , dots: true
+                    , nav: true // Enable navigation arrows
+                    , navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+                    
                     , responsiveClass: true
                     , responsive: {
                         0: {
@@ -715,8 +717,11 @@
                         , 1000: {
                             items: 2
                         }
-                    }
+                    },
+                     dots: true
                 });
+                
+           
                 
                 // Blog owlCarousel
                 $('.blog .owl-carousel').owlCarousel({
