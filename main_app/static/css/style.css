@@ -1164,11 +1164,11 @@ body.offcanvason .ovon-nav-toggle {
     padding: 9px 3px;
 }
 
-button.owl-next {
-    color: red !important;
+button.owl-next:hover{
+    background-color:#DD6E8B !important;
 }
-button.owl-prev{
-    color: red !important;
+button.owl-prev:hover{
+    background-color:#DD6E8B !important;
 } 
 
 
