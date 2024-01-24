@@ -703,7 +703,9 @@
                     , margin: 30
                     , mouseDrag: true
                     , autoplay: false
-                    , dots: true
+                    , nav: true // Enable navigation arrows
+                    , navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+                    
                     , responsiveClass: true
                     , responsive: {
                         0: {
@@ -715,8 +717,10 @@
                         , 1000: {
                             items: 2
                         }
-                    }
+                    },
+                     dots: true
                 });
+                
                 
                 // Blog owlCarousel
                 $('.blog .owl-carousel').owlCarousel({
